@@ -1,14 +1,22 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Ionic Cordova Plugin Example
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+    This is how you know our plugin works!
+    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://github.com/xUnholy/cordova-device-accounts">docs</a> will be your guide.</p>
   </div>
+  
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-button (click)="getPermissionsFromDevice()()" color="dark" expand="block">Get Permissions</ion-button>
+    <ion-button (click)="getAccountsFromDevice()" color="dark" expand="block">Get Accounts</ion-button>
+  </ion-toolbar>
+</ion-footer>
