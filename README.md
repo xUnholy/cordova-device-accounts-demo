@@ -23,3 +23,19 @@ Ensure you run the project on an Android device. The getPermissions() function w
 ```bash
 ionic cordova run android --device
 ```
+
+## Known Issues
+
+Currently the Ionic-Native has not been updated for the v2 version of this plugin. To fix this you must replace the following line of code in the node_modules/@ionic-native/device-accounts/ngx/index.js Line 34:
+
+**OLD**
+
+```javascript
+DeviceAccounts.pluginRef = "plugins.DeviceAccounts";
+```
+
+**NEW**
+
+```javascript
+DeviceAccounts.pluginRef = "DeviceAccounts";
+```
